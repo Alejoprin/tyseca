@@ -84,6 +84,9 @@ document.querySelectorAll(".cliente-card__slider").forEach((slider) => {
   }
 });
 
+// ── Inicializar EmailJS ──
+emailjs.init("3HGENuV0hCAt7gb9c");
+
 // ── Formulario de contacto con validaciones ──
 const contactForm = document.getElementById("contact-form");
 const submitBtn = document.getElementById("submit-btn");
@@ -152,55 +155,58 @@ function validateField(fieldId) {
   }
 }
 
-// ── Validación en tiempo real (blur) ──
+// ── Validación en tiempo real ──
 ["name", "email", "phone", "message"].forEach((fieldId) => {
   const input = document.getElementById(fieldId);
   if (!input) return;
 
-  // Al perder el foco
   input.addEventListener("blur", () => validateField(fieldId));
-
-  // Al escribir — limpiar error si ya es válido
   input.addEventListener("input", () => {
     const rule = rules[fieldId];
     if (rule && rule.validate(input.value)) clearError(fieldId);
   });
 });
 
-// ── Submit con validación completa ──
+// ── Submit con EmailJS ──
 if (contactForm) {
   contactForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    // Validar todos los campos
     const valid = ["name", "email", "phone", "message"]
       .map(validateField)
       .every(Boolean);
     if (!valid) return;
 
-    // Enviar
     submitBtn.disabled = true;
     submitBtn.querySelector("span").textContent = "Enviando...";
 
-    // Simulación de envío — reemplazar con EmailJS o Formspree
-    setTimeout(() => {
-      contactForm.reset();
+    emailjs
+      .sendForm("service_oajqd1q", "template_9avvylf", contactForm)
+      .then(() => {
+        contactForm.reset();
 
-      // Limpiar estados visuales
-      ["name", "email", "phone", "message"].forEach((id) => {
-        const input = document.getElementById(id);
-        if (input)
-          input.classList.remove("form-input--ok", "form-input--error");
+        ["name", "email", "phone", "message"].forEach((id) => {
+          const input = document.getElementById(id);
+          if (input)
+            input.classList.remove("form-input--ok", "form-input--error");
+        });
+
+        submitBtn.disabled = false;
+        submitBtn.querySelector("span").textContent = "Enviar Mensaje";
+        formSuccess.classList.add("form-success--visible");
+        setTimeout(
+          () => formSuccess.classList.remove("form-success--visible"),
+          5000,
+        );
+      })
+      .catch((error) => {
+        console.error("EmailJS error:", error);
+        submitBtn.disabled = false;
+        submitBtn.querySelector("span").textContent = "Enviar Mensaje";
+        alert(
+          "Hubo un error al enviar el mensaje. Por favor intente nuevamente.",
+        );
       });
-
-      submitBtn.disabled = false;
-      submitBtn.querySelector("span").textContent = "Enviar Mensaje";
-      formSuccess.classList.add("form-success--visible");
-      setTimeout(
-        () => formSuccess.classList.remove("form-success--visible"),
-        5000,
-      );
-    }, 1500);
   });
 }
 
