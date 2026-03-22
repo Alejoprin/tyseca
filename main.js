@@ -103,8 +103,11 @@ const rules = {
     message: "Ingrese un correo electrónico válido.",
   },
   phone: {
-    validate: (v) => v.trim() === "" || /^[\d\s\+\-\(\)]{7,20}$/.test(v.trim()),
-    message: "Ingrese un número de teléfono válido.",
+    validate: (v) => {
+      const onlyDigits = v.replace(/[\s\+\-\(\)]/g, "");
+      return /^[\d\s\+\-\(\)]{7,20}$/.test(v.trim()) && onlyDigits.length >= 8;
+    },
+    message: "Ingrese un número válido con al menos 8 dígitos.",
   },
   message: {
     validate: (v) => v.trim().length >= 10,

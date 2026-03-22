@@ -1,0 +1,22 @@
+{
+  "name": "tyseca",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "Alejandro Calderón <bass@gmail.com>",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "terser": "^5.46.1",
+    "vite": "^8.0.1",
+    "vite-plugin-html": "^3.2.2",
+    "vite-plugin-imagemin": "^0.6.1"
+  }
+}
