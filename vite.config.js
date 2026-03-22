@@ -5,7 +5,7 @@ import { createHtmlPlugin } from "vite-plugin-html";
 export default defineConfig({
   base: "/tyseca/",
   build: {
-    outDir: "dist",
+    outDir: "Tyseca",
     minify: "terser",
   },
   plugins: [
