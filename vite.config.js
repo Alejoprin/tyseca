@@ -19,6 +19,7 @@ export default defineConfig({
         useShortDoctype: true,
         minifyCSS: true,
         minifyJS: true,
+        ignoreCustomComments: [/^!/],
       },
     }),
     viteImagemin({

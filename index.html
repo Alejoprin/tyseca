@@ -1,4 +1,10 @@
 <!doctype html>
+<!-- 
+  Desarrollado por Alejandro Daniel Calderón Prin
+  Web: https://alejoprin.github.io/Portfolio/
+  Linkedin: https://www.linkedin.com/in/alejandrocalderonprin/
+  © 2026
+-->
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -15,11 +21,11 @@
       name="keywords"
       content="baterías VRLA, sistemas UPS, energía respaldada, CSB, Ablerex, HRD, mantenimiento UPS, Venezuela, Caracas"
     />
-    <meta name="author" content="TySECA" />
+    <meta name="author" content="Alejandro Daniel Calderón Prin" />
     <meta name="robots" content="index, follow" />
     <meta name="language" content="es" />
     <meta name="theme-color" content="#B8860B" />
-    <link rel="canonical" href="https://Alejoprin.github.io/tyseca" />
+    <link rel="canonical" href="https://www.tyseca.com" />
 
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -55,7 +61,7 @@
 
     <!-- Open Graph / WhatsApp / Facebook / LinkedIn / Telegram -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://Alejoprin.github.io/tyseca" />
+    <meta property="og:url" content="https://www.tyseca.com" />
     <meta
       property="og:title"
       content="TySECA – Soluciones en Energía Respaldada"
@@ -66,7 +72,7 @@
     />
     <meta
       property="og:image"
-      content="https://Alejoprin.github.io/tyseca/assets/logo-tyseca.png"
+      content="https://www.tyseca.com/assets/logo-tyseca.png"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -84,7 +90,7 @@
         "@type": "LocalBusiness",
         "name": "TySECA",
         "description": "Especialistas en baterías selladas VRLA, sistemas UPS, instalación, reparación y mantenimiento. Distribuidores autorizados de CSB, Ablerex y HRD en Venezuela.",
-        "url": "https://Alejoprin.github.io/tyseca",
+        "url": "https://www.tyseca.com",
         "telephone": "+58-414-307-2365",
         "address": {
           "@type": "PostalAddress",
@@ -114,13 +120,8 @@
         "sameAs": []
       }
     </script>
-
-    <!-- EmailJS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-      defer
-    ></script>
   </head>
+
   <body>
     <!-- HEADER -->
     <header class="header">
@@ -1577,7 +1578,6 @@
       <!-- ===================== CONTACTO ===================== -->
       <section id="contacto" class="contacto">
         <div class="container">
-          <!-- Encabezado -->
           <div class="contacto__header">
             <h2 class="contacto__title">Contáctenos</h2>
             <p class="contacto__desc">
@@ -1585,14 +1585,12 @@
             </p>
           </div>
 
-          <!-- Grid: info izq + formulario der -->
           <div class="contacto__grid">
             <!-- Columna izquierda: info -->
             <div class="contacto__info">
               <h3 class="contacto__info-title">Información de Contacto</h3>
 
               <div class="contacto__items">
-                <!-- Teléfonos -->
                 <div class="contacto__item">
                   <div class="contacto__item-icon">
                     <svg
@@ -1621,7 +1619,6 @@
                   </div>
                 </div>
 
-                <!-- Email -->
                 <div class="contacto__item">
                   <div class="contacto__item-icon">
                     <svg
@@ -1641,26 +1638,11 @@
                   </div>
                   <div class="contacto__item-body">
                     <h4 class="contacto__item-title">Email</h4>
-                    <p>
-                      <a
-                        href="/cdn-cgi/l/email-protection"
-                        class="__cf_email__"
-                        data-cfemail="472d28342269372e28312e242f2207333e342224266924282a"
-                        >[email&#160;protected]</a
-                      >
-                    </p>
-                    <p>
-                      <a
-                        href="/cdn-cgi/l/email-protection"
-                        class="__cf_email__"
-                        data-cfemail="5c36392f292f723b333139261c28252f393f3d723f3331"
-                        >[email&#160;protected]</a
-                      >
-                    </p>
+                    <p>jose.pioviche@tyseca.com</p>
+                    <p>jesus.gomez@tyseca.com</p>
                   </div>
                 </div>
 
-                <!-- Ubicación -->
                 <div class="contacto__item">
                   <div class="contacto__item-icon">
                     <svg
@@ -1686,7 +1668,6 @@
                   </div>
                 </div>
 
-                <!-- Horario -->
                 <div class="contacto__item">
                   <div class="contacto__item-icon">
                     <svg
@@ -1712,7 +1693,6 @@
                 </div>
               </div>
 
-              <!-- Bloque emergencia 24/7 -->
               <div class="contacto__emergencia">
                 <h4 class="contacto__emergencia-title">
                   Servicios de Emergencia
@@ -1727,61 +1707,40 @@
               </div>
             </div>
 
-            <!-- Columna derecha: formulario -->
-            <div class="contacto__form-wrap">
-              <h3 class="contacto__form-title">Envíenos un Mensaje</h3>
-              <form class="contacto__form" id="contact-form" novalidate>
-                <div class="form-group">
-                  <label for="name" class="form-label">Nombre Completo *</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    class="form-input"
-                    placeholder="Su nombre"
-                  />
-                </div>
+            <!-- Columna derecha: redes sociales -->
+            <div class="contacto__social-wrap">
+              <h3 class="contacto__social-title">Síguenos en Redes Sociales</h3>
+              <p class="contacto__social-desc">
+                Mantente al día con nuestras novedades, productos y servicios.
+              </p>
 
-                <div class="form-group">
-                  <label for="email" class="form-label"
-                    >Correo Electrónico *</label
-                  >
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    class="form-input"
-                    placeholder="correo@dominio.com"
-                  />
-                </div>
-
-                <div class="form-group">
-                  <label for="phone" class="form-label">Teléfono</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    class="form-input"
-                    placeholder="+58 XXX-XXXXXXX"
-                  />
-                </div>
-
-                <div class="form-group">
-                  <label for="message" class="form-label">Mensaje *</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    required
-                    rows="5"
-                    class="form-input form-textarea"
-                    placeholder="Cuéntenos sobre su proyecto o necesidad..."
-                  ></textarea>
-                </div>
-
-                <button type="submit" class="form-btn" id="submit-btn">
+              <div class="contacto__social-links">
+                <!-- Facebook -->
+                <a
+                  href="https://www.facebook.com/profile.php?id=61577675661585"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-card social-card--facebook"
+                >
+                  <div class="social-card__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="social-card__info">
+                    <span class="social-card__name">Facebook</span>
+                    <span class="social-card__handle">TySECA</span>
+                  </div>
                   <svg
+                    class="social-card__arrow"
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
@@ -1792,18 +1751,102 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   >
-                    <path
-                      d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
-                    />
-                    <path d="m21.854 2.147-10.94 10.939" />
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
                   </svg>
-                  <span>Enviar Mensaje</span>
-                </button>
+                </a>
 
-                <div class="form-success" id="form-success">
-                  ✅ ¡Mensaje enviado! Nos pondremos en contacto pronto.
-                </div>
-              </form>
+                <!-- Instagram -->
+                <a
+                  href="https://www.instagram.com/tysecaservicios/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-card social-card--instagram"
+                >
+                  <div class="social-card__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                      <path
+                        d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                      />
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                  </div>
+                  <div class="social-card__info">
+                    <span class="social-card__name">Instagram</span>
+                    <span class="social-card__handle">@tysecaservicios</span>
+                  </div>
+                  <svg
+                    class="social-card__arrow"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+
+                <!-- WhatsApp -->
+                <a
+                  href="https://wa.me/584143072365"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-card social-card--whatsapp"
+                >
+                  <div class="social-card__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+                      />
+                      <path
+                        d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.855L.057 23.535a.75.75 0 0 0 .908.908l5.68-1.471A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 0 1-4.953-1.355l-.355-.212-3.683.953.977-3.567-.232-.368A9.712 9.712 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="social-card__info">
+                    <span class="social-card__name">WhatsApp</span>
+                    <span class="social-card__handle">+58 (414) 307-2365</span>
+                  </div>
+                  <svg
+                    class="social-card__arrow"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
