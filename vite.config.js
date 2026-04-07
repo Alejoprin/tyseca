@@ -3,7 +3,7 @@ import viteImagemin from "vite-plugin-imagemin";
 import { createHtmlPlugin } from "vite-plugin-html";
 
 export default defineConfig({
-  base: "/tyseca/",
+  base: "./",
   build: {
     outDir: "Tyseca",
     minify: "terser",

@@ -1788,25 +1788,6 @@ body {
   margin-top: 0.4rem;
 }
 
-/* ── Validación del formulario ── */
-.form-input--error {
-  border-color: #ef4444;
-  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
-}
-
-.form-input--ok {
-  border-color: #22c55e;
-  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.12);
-}
-
-.form-error-msg {
-  display: block;
-  color: #ef4444;
-  font-size: 0.8rem;
-  font-weight: 500;
-  margin-top: 0.35rem;
-}
-
 /* =============================================
    WHATSAPP BUTTON
    ============================================= */
